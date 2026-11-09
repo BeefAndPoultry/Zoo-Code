@@ -41,7 +41,8 @@
 		"knip": "knip --treat-config-hints-as-errors",
 		"npm:publish:types": "pnpm --filter @roo-code/types npm:publish",
 		"knip:production": "knip --production --treat-config-hints-as-errors",
-		"test:knip-policy": "node --test scripts/knip-policy.test.mjs"
+		"test:knip-policy": "node --test scripts/knip-policy.test.mjs",
+		"check": "npm run format:check && npm run lint && npm run check-types"
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.31.1",
